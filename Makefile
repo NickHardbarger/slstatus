@@ -14,6 +14,7 @@ COM =\
 	components/entropy\
 	components/hostname\
 	components/ip\
+	components/kanji\
 	components/kernel_release\
 	components/keyboard_indicators\
 	components/keymap\

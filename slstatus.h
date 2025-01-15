@@ -31,6 +31,9 @@ const char *hostname(const char *unused);
 const char *ipv4(const char *interface);
 const char *ipv6(const char *interface);
 
+/* kanji */
+const char *kanji(const char *unused);
+
 /* kernel_release */
 const char *kernel_release(const char *unused);
 
