@@ -4,7 +4,7 @@
 const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "零";
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -71,7 +71,7 @@ static const char vol[] =
                             volume=`wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2;}'`; \
                             if [ -z ${muted} ]; then \
                                 printf \"${volume}\"; \
-                            else printf \"オフ\"; \
+                            else printf \"离开\"; \
                             fi";
 
 static const char mic[] =
@@ -79,7 +79,7 @@ static const char mic[] =
                             volume=`wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | awk '{print $2;}'`; \
                             if [ -z ${muted} ]; then \
                                 printf \"${volume}\"; \
-                            else printf \"オフ\"; \
+                            else printf \"离开\"; \
                             fi";
 
 static const struct arg args[] = {
