@@ -84,17 +84,17 @@ static const char mic[] =
 
 static const struct arg args[] = {
     /* function        format         argument */
-    {run_command, "^fg(d79921)[  %s ^fg()", vol},
-    {run_command, "^fg(d79921) %s]^fg()", mic},
+    {run_command, "^fg(d79921)   %s ^fg()", vol},
+    {run_command, "^fg(d79921) %s ^fg()", mic},
 
-    {temp, "^fg(d65d0e)[ %s°C]^fg()",
+    {temp, "^fg(d65d0e)  %s°C ^fg()",
      "/sys/class/thermal/thermal_zone1/temp"},
-    {cpu_perc, "^fg(458588)[ %s%%]^fg()", NULL},
-    {ram_perc, "^fg(b16286)[ %s%%]^fg()", NULL},
-    {wifi_perc, "^fg(928374)[ %s%%]^fg()", "wlp3s0"},
-    {battery_perc, "^fg(98971a)[ %s%%]^fg()", "BAT0"},
+    {cpu_perc, "^fg(458588)  %s%% ^fg()", NULL},
+    {ram_perc, "^fg(b16286)  %s%% ^fg()", NULL},
+    {wifi_perc, "^fg(928374)  %s%% ^fg()", "wlp3s0"},
+    {battery_perc, "^fg(98971a)  %s%% ^fg()", "BAT0"},
 
-    {datetime, "^fg(689d6a)[%s^fg()", "%Y年%m月%d日"},
+    {datetime, "^fg(689d6a)%s^fg()", "%Y年%m月%d日"},
     {kanji, "^fg(689d6a) %s ^fg()", NULL},
-    {datetime, "^fg(689d6a)%s]^fg()", "%H:%M:%S"},
+    {datetime, "^fg(689d6a)%s ^fg()", "%H:%M:%S"},
 };
