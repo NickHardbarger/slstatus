@@ -87,7 +87,7 @@ static const struct arg args[] = {
     {run_command, "^fg(d79921)│  %s ^fg()", vol},
     {run_command, "^fg(d79921) %s│^fg()", mic},
 
-    {temp, "^fg(d65d0e)│ %s°C│^fg()",
+    {temp, "^fg(cc241d)│ %s°C│^fg()",
      "/sys/class/thermal/thermal_zone1/temp"},
     {cpu_perc, "^fg(458588)│ %s%%│^fg()", NULL},
     {ram_perc, "^fg(b16286)│ %s%%│^fg()", NULL},
