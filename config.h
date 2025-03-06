@@ -84,15 +84,15 @@ static const char mic[] =
 
 static const struct arg args[] = {
     /* function        format         argument */
-    {run_command, "^fg(d79921)   %s ^fg()", vol},
-    {run_command, "^fg(d79921) %s ^fg()", mic},
-
-    {temp, "^fg(cc241d) %s°C ^fg()",
+    {temp, "^fg(cc241d)  %s°C ^fg()",
      "/sys/class/thermal/thermal_zone1/temp"},
     {cpu_perc, "^fg(458588) %s%% ^fg()", NULL},
     {ram_perc, "^fg(b16286) %s%% ^fg()", NULL},
     {wifi_perc, "^fg(928374) %s%% ^fg()", "wlp3s0"},
     {battery_perc, "^fg(98971a) %s%% ^fg()", "BAT0"},
+
+    {run_command, "^fg(d79921)  %s ^fg()", vol},
+    {run_command, "^fg(d79921) %s ^fg()", mic},
 
     {datetime, "^fg(689d6a)%s^fg()", "%Y年%m月%d日"},
     {kanji, "^fg(689d6a) %s ^fg()", NULL},
