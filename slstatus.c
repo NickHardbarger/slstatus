@@ -33,7 +33,7 @@ static void difftimespec(struct timespec *res, struct timespec *a,
   res->tv_nsec = a->tv_nsec - b->tv_nsec + (a->tv_nsec < b->tv_nsec) * 1E9;
 }
 
-static void usage(void) { die("usage: %s [-v] [-s] [-1]", argv0); }
+static void usage(void) { die("usage: %s [-h] [-s]", argv0); }
 
 int main(int argc, char *argv[]) {
   struct sigaction act;
@@ -46,16 +46,11 @@ int main(int argc, char *argv[]) {
 
   sflag = 0;
   ARGBEGIN {
-  case 'v':
-    die("slstatus-" VERSION);
-  case '1':
-    done = 1;
-    /* FALLTHROUGH */
-  case 's':
-    sflag = 1;
+  case 'h':
+    die("There is no help. You're on your own.");
     break;
   default:
-    usage();
+    sflag = 1;
   }
   ARGEND
 
