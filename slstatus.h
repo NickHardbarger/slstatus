@@ -37,9 +37,6 @@ const char *kanji(const char *unused);
 /* kernel_release */
 const char *kernel_release(const char *unused);
 
-/* keyboard_indicators */
-const char *keyboard_indicators(const char *fmt);
-
 /* keymap */
 const char *keymap(const char *unused);
 

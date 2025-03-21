@@ -33,8 +33,6 @@ static const char unknown_str[] = "零";
  * ipv6                IPv6 address                    interface name (eth0)
  * kanji               current day of week kanji       NULL
  * kernel_release      `uname -r`                      NULL
- * keyboard_indicators caps/num lock indicators        format string (c?n?)
- *                                                     see keyboard_indicators.c
  * keymap              layout (variant) of current     NULL
  *                     keymap
  * load_avg            load average                    NULL
