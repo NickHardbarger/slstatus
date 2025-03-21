@@ -16,7 +16,6 @@ COM =\
 	components/ip\
 	components/kanji\
 	components/kernel_release\
-	components/keymap\
 	components/load_avg\
 	components/netspeeds\
 	components/num_files\

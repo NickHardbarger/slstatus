@@ -37,9 +37,6 @@ const char *kanji(const char *unused);
 /* kernel_release */
 const char *kernel_release(const char *unused);
 
-/* keymap */
-const char *keymap(const char *unused);
-
 /* load_avg */
 const char *load_avg(const char *unused);
 

@@ -33,8 +33,6 @@ static const char unknown_str[] = "零";
  * ipv6                IPv6 address                    interface name (eth0)
  * kanji               current day of week kanji       NULL
  * kernel_release      `uname -r`                      NULL
- * keymap              layout (variant) of current     NULL
- *                     keymap
  * load_avg            load average                    NULL
  * netspeed_rx         receive network speed           interface name (wlan0)
  * netspeed_tx         transfer network speed          interface name (wlan0)
