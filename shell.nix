@@ -6,6 +6,7 @@ pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
     gnumake
     xorg.libX11
+    wayland
   ];
   shellHook = ''
     echo "dev time!"
