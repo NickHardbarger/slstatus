@@ -33,8 +33,6 @@ static void difftimespec(struct timespec *res, struct timespec *a,
   res->tv_nsec = a->tv_nsec - b->tv_nsec + (a->tv_nsec < b->tv_nsec) * 1E9;
 }
 
-static void usage(void) { die("usage: %s [-h] [-s]", argv0); }
-
 int main(int argc, char *argv[]) {
   struct sigaction act;
   struct timespec start, current, diff, intspec, wait;
@@ -53,9 +51,6 @@ int main(int argc, char *argv[]) {
     sflag = 1;
   }
   ARGEND
-
-  if (argc)
-    usage();
 
   memset(&act, 0, sizeof(act));
   act.sa_handler = terminate;
