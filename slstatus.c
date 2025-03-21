@@ -1,11 +1,11 @@
 /* See LICENSE file for copyright and license details. */
-#include <X11/Xlib.h>
 #include <errno.h>
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <wayland-client.h>
 
 #include "arg.h"
 #include "slstatus.h"
@@ -19,7 +19,6 @@ struct arg {
 
 char buf[1024];
 static volatile sig_atomic_t done;
-static Display *dpy;
 
 #include "config.h"
 
@@ -43,6 +42,7 @@ int main(int argc, char *argv[]) {
   int sflag, ret;
   char status[MAXLEN];
   const char *res;
+  struct wl_display *display;
 
   sflag = 0;
   ARGBEGIN {
@@ -69,8 +69,8 @@ int main(int argc, char *argv[]) {
   act.sa_flags |= SA_RESTART;
   sigaction(SIGUSR1, &act, NULL);
 
-  if (!sflag && !(dpy = XOpenDisplay(NULL)))
-    die("XOpenDisplay: Failed to open display");
+  if (!sflag && !(display = wl_display_connect(NULL)))
+    die("wl_display_connect: Failed to open display");
 
   do {
     if (clock_gettime(CLOCK_MONOTONIC, &start) < 0)
@@ -94,9 +94,7 @@ int main(int argc, char *argv[]) {
       if (ferror(stdout))
         die("puts:");
     } else {
-      if (XStoreName(dpy, DefaultRootWindow(dpy), status) < 0)
-        die("XStoreName: Allocation failed");
-      XFlush(dpy);
+      wl_display_flush(display);
     }
 
     if (!done) {
@@ -113,11 +111,8 @@ int main(int argc, char *argv[]) {
     }
   } while (!done);
 
-  if (!sflag) {
-    XStoreName(dpy, DefaultRootWindow(dpy), NULL);
-    if (XCloseDisplay(dpy) < 0)
-      die("XCloseDisplay: Failed to close display");
-  }
+  if (!sflag)
+    wl_display_disconnect(display);
 
   return 0;
 }
