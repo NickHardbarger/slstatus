@@ -26,7 +26,6 @@ static const char unknown_str[] = "零";
  *y run_command         custom shell command            command (echo foo)
  *y temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
- *n wifi_essid          WiFi ESSID                      interface name (wlan0)
  *y wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
