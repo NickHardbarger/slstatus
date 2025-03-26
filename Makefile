@@ -23,7 +23,6 @@ COM =\
 	components/swap\
 	components/temperature\
 	components/uptime\
-	components/user\
 	components/volume\
 	components/wifi
 
