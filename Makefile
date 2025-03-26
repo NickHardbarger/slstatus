@@ -11,7 +11,6 @@ COM =\
 	components/cpu\
 	components/datetime\
 	components/entropy\
-	components/hostname\
 	components/ip\
 	components/kanji\
 	components/netspeeds\

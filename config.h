@@ -23,7 +23,6 @@ static const char unknown_str[] = "零";
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
  *n entropy             available entropy               NULL
- *n hostname            hostname                        NULL
  *n ipv4                IPv4 address                    interface name (eth0)
  *n ipv6                IPv6 address                    interface name (eth0)
  *y kanji               current day of week kanji       NULL
