@@ -7,7 +7,6 @@
 #include <time.h>
 #include <wayland-client.h>
 
-#include "arg.h"
 #include "slstatus.h"
 #include "util.h"
 
@@ -33,7 +32,7 @@ static void difftimespec(struct timespec *res, struct timespec *a,
   res->tv_nsec = a->tv_nsec - b->tv_nsec + (a->tv_nsec < b->tv_nsec) * 1E9;
 }
 
-int main(int argc, char *argv[]) {
+int main() {
   struct sigaction act;
   struct timespec start, current, diff, intspec, wait;
   size_t i, len;
@@ -42,15 +41,7 @@ int main(int argc, char *argv[]) {
   const char *res;
   struct wl_display *display;
 
-  sflag = 0;
-  ARGBEGIN {
-  case 'h':
-    die("There is no help. You're on your own.");
-    break;
-  default:
-    sflag = 1;
-  }
-  ARGEND
+  sflag = 1;
 
   memset(&act, 0, sizeof(act));
   act.sa_handler = terminate;
