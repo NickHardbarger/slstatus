@@ -27,7 +27,6 @@ static const char unknown_str[] = "零";
  *n ipv4                IPv4 address                    interface name (eth0)
  *n ipv6                IPv6 address                    interface name (eth0)
  *y kanji               current day of week kanji       NULL
- *n load_avg            load average                    NULL
  *n netspeed_rx         receive network speed           interface name (wlan0)
  *n netspeed_tx         transfer network speed          interface name (wlan0)
  *n ram_free            free memory in GB               NULL
