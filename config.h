@@ -28,10 +28,6 @@ static const char unknown_str[] = "零";
  *n ram_total           total memory size in GB         NULL
  *n ram_used            used memory in GB               NULL
  *y run_command         custom shell command            command (echo foo)
- *n swap_free           free swap in GB                 NULL
- *n swap_perc           swap usage in percent           NULL
- *n swap_total          total swap size in GB           NULL
- *n swap_used           used swap in GB                 NULL
  *y temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
  *                                                     NULL on OpenBSD

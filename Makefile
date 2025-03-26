@@ -13,7 +13,6 @@ COM =\
 	components/kanji\
 	components/ram\
 	components/run_command\
-	components/swap\
 	components/temperature\
 	components/volume\
 	components/wifi
