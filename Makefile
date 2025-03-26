@@ -18,7 +18,7 @@ COM =\
 all: wlstat
 
 $(COM:=.o): config.mk $(REQ:=.h) slstatus.h
-slstatus.o: slstatus.c slstatus.h arg.h config.h config.mk $(REQ:=.h)
+slstatus.o: slstatus.c slstatus.h config.h config.mk $(REQ:=.h)
 
 .c.o:
 	$(CC) -o $@ -c $(CPPFLAGS) $(CFLAGS) $<
@@ -36,7 +36,7 @@ dist:
 	rm -rf wlstat"-$(VERSION)"
 	mkdir -p wlstat"-$(VERSION)/components"
 	cp -R LICENSE Makefile README config.mk config.def.h \
-	      arg.h slstatus.h slstatus.c $(REQ:=.c) $(REQ:=.h) \
+	      slstatus.h slstatus.c $(REQ:=.c) $(REQ:=.h) \
 	      wlstat"-$(VERSION)"
 	cp -R $(COM:=.c) wlstat"-$(VERSION)/components"
 	tar -cf - wlstat"-$(VERSION)" | gzip -c > wlstat"-$(VERSION).tar.gz"
