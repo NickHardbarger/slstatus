@@ -22,8 +22,6 @@ static const char unknown_str[] = "零";
  *n cpu_freq            cpu frequency in MHz            NULL
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
- *n ipv4                IPv4 address                    interface name (eth0)
- *n ipv6                IPv6 address                    interface name (eth0)
  *y kanji               current day of week kanji       NULL
  *n netspeed_rx         receive network speed           interface name (wlan0)
  *n netspeed_tx         transfer network speed          interface name (wlan0)

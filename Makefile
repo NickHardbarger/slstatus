@@ -10,7 +10,6 @@ COM =\
 	components/cat\
 	components/cpu\
 	components/datetime\
-	components/ip\
 	components/kanji\
 	components/netspeeds\
 	components/ram\
