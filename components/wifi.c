@@ -9,9 +9,6 @@
 #include "../slstatus.h"
 #include "../util.h"
 
-#define RSSI_TO_PERC(rssi)                                                     \
-  rssi >= -50 ? 100 : (rssi <= -100 ? 0 : (2 * (rssi + 100)))
-
 #include <limits.h>
 #include <linux/wireless.h>
 
