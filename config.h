@@ -22,10 +22,6 @@ static const char unknown_str[] = "零";
  *n cpu_freq            cpu frequency in MHz            NULL
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
- *n disk_free           free disk space in GB           mountpoint path (/)
- *n disk_perc           disk usage in percent           mountpoint path (/)
- *n disk_total          total disk space in GB          mountpoint path (/)
- *n disk_used           used disk space in GB           mountpoint path (/)
  *n entropy             available entropy               NULL
  *n gid                 GID of current user             NULL
  *n hostname            hostname                        NULL

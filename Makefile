@@ -10,7 +10,6 @@ COM =\
 	components/cat\
 	components/cpu\
 	components/datetime\
-	components/disk\
 	components/entropy\
 	components/hostname\
 	components/ip\
