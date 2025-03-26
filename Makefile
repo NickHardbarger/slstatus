@@ -13,7 +13,6 @@ COM =\
 	components/ram\
 	components/run_command\
 	components/temperature\
-	components/volume\
 	components/wifi
 
 all: slstatus
