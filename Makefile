@@ -11,7 +11,6 @@ COM =\
 	components/cpu\
 	components/datetime\
 	components/kanji\
-	components/netspeeds\
 	components/ram\
 	components/run_command\
 	components/swap\

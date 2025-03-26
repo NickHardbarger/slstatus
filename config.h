@@ -23,8 +23,6 @@ static const char unknown_str[] = "零";
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
  *y kanji               current day of week kanji       NULL
- *n netspeed_rx         receive network speed           interface name (wlan0)
- *n netspeed_tx         transfer network speed          interface name (wlan0)
  *n ram_free            free memory in GB               NULL
  *y ram_perc            memory usage in percent         NULL
  *n ram_total           total memory size in GB         NULL
