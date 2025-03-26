@@ -12,53 +12,53 @@ static const char unknown_str[] = "零";
 /*
  * function            description                     argument (example)
  *
- * battery_perc        battery percentage              battery name (BAT0)
+ *y battery_perc        battery percentage              battery name (BAT0)
  *                                                     NULL on OpenBSD/FreeBSD
- * battery_remaining   battery remaining HH:MM         battery name (BAT0)
+ *n battery_remaining   battery remaining HH:MM         battery name (BAT0)
  *                                                     NULL on OpenBSD/FreeBSD
- * battery_state       battery charging state          battery name (BAT0)
+ *n battery_state       battery charging state          battery name (BAT0)
  *                                                     NULL on OpenBSD/FreeBSD
- * cat                 read arbitrary file             path
- * cpu_freq            cpu frequency in MHz            NULL
- * cpu_perc            cpu usage in percent            NULL
- * datetime            date and time                   format string (%F %T)
- * disk_free           free disk space in GB           mountpoint path (/)
- * disk_perc           disk usage in percent           mountpoint path (/)
- * disk_total          total disk space in GB          mountpoint path (/)
- * disk_used           used disk space in GB           mountpoint path (/)
- * entropy             available entropy               NULL
- * gid                 GID of current user             NULL
- * hostname            hostname                        NULL
- * ipv4                IPv4 address                    interface name (eth0)
- * ipv6                IPv6 address                    interface name (eth0)
- * kanji               current day of week kanji       NULL
- * kernel_release      `uname -r`                      NULL
- * load_avg            load average                    NULL
- * netspeed_rx         receive network speed           interface name (wlan0)
- * netspeed_tx         transfer network speed          interface name (wlan0)
- * num_files           number of files in a directory  path
+ *m cat                 read arbitrary file             path
+ *n cpu_freq            cpu frequency in MHz            NULL
+ *y cpu_perc            cpu usage in percent            NULL
+ *y datetime            date and time                   format string (%F %T)
+ *n disk_free           free disk space in GB           mountpoint path (/)
+ *n disk_perc           disk usage in percent           mountpoint path (/)
+ *n disk_total          total disk space in GB          mountpoint path (/)
+ *n disk_used           used disk space in GB           mountpoint path (/)
+ *n entropy             available entropy               NULL
+ *n gid                 GID of current user             NULL
+ *n hostname            hostname                        NULL
+ *n ipv4                IPv4 address                    interface name (eth0)
+ *n ipv6                IPv6 address                    interface name (eth0)
+ *y kanji               current day of week kanji       NULL
+ *n kernel_release      `uname -r`                      NULL
+ *n load_avg            load average                    NULL
+ *n netspeed_rx         receive network speed           interface name (wlan0)
+ *n netspeed_tx         transfer network speed          interface name (wlan0)
+ *n num_files           number of files in a directory  path
  *                                                     (/home/foo/Inbox/cur)
- * ram_free            free memory in GB               NULL
- * ram_perc            memory usage in percent         NULL
- * ram_total           total memory size in GB         NULL
- * ram_used            used memory in GB               NULL
- * run_command         custom shell command            command (echo foo)
- * swap_free           free swap in GB                 NULL
- * swap_perc           swap usage in percent           NULL
- * swap_total          total swap size in GB           NULL
- * swap_used           used swap in GB                 NULL
- * temp                temperature in degree celsius   sensor file
+ *n ram_free            free memory in GB               NULL
+ *y ram_perc            memory usage in percent         NULL
+ *n ram_total           total memory size in GB         NULL
+ *n ram_used            used memory in GB               NULL
+ *y run_command         custom shell command            command (echo foo)
+ *n swap_free           free swap in GB                 NULL
+ *n swap_perc           swap usage in percent           NULL
+ *n swap_total          total swap size in GB           NULL
+ *n swap_used           used swap in GB                 NULL
+ *y temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
  *                                                     NULL on OpenBSD
  *                                                     thermal zone on FreeBSD
  *                                                     (tz0, tz1, etc.)
- * uid                 UID of current user             NULL
- * uptime              system uptime                   NULL
- * username            username of current user        NULL
- * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
+ *n uid                 UID of current user             NULL
+ *n uptime              system uptime                   NULL
+ *n username            username of current user        NULL
+ *n vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
- * wifi_essid          WiFi ESSID                      interface name (wlan0)
- * wifi_perc           WiFi signal in percent          interface name (wlan0)
+ *n wifi_essid          WiFi ESSID                      interface name (wlan0)
+ *y wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
 /* vol and mic modules stolen from github.com/brookiestein */
