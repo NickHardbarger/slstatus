@@ -18,7 +18,6 @@ static const char unknown_str[] = "零";
  *                                                     NULL on OpenBSD/FreeBSD
  *n battery_state       battery charging state          battery name (BAT0)
  *                                                     NULL on OpenBSD/FreeBSD
- *m cat                 read arbitrary file             path
  *n cpu_freq            cpu frequency in MHz            NULL
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
