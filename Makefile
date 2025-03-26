@@ -14,7 +14,6 @@ COM =\
 	components/hostname\
 	components/ip\
 	components/kanji\
-	components/kernel_release\
 	components/load_avg\
 	components/netspeeds\
 	components/num_files\
