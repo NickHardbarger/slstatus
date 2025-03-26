@@ -29,9 +29,6 @@ static const char unknown_str[] = "零";
  *y run_command         custom shell command            command (echo foo)
  *y temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
- *                                                     NULL on OpenBSD
- *                                                     thermal zone on FreeBSD
- *                                                     (tz0, tz1, etc.)
  *n wifi_essid          WiFi ESSID                      interface name (wlan0)
  *y wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
