@@ -13,12 +13,6 @@ static const char unknown_str[] = "零";
  * function            description                     argument (example)
  *
  *y battery_perc        battery percentage              battery name (BAT0)
- *                                                     NULL on OpenBSD/FreeBSD
- *n battery_remaining   battery remaining HH:MM         battery name (BAT0)
- *                                                     NULL on OpenBSD/FreeBSD
- *n battery_state       battery charging state          battery name (BAT0)
- *                                                     NULL on OpenBSD/FreeBSD
- *n cpu_freq            cpu frequency in MHz            NULL
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
  *y kanji               current day of week kanji       NULL
