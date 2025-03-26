@@ -38,18 +38,10 @@ static const char unknown_str[] = "零";
  *y wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
-/* vol and mic modules stolen from github.com/brookiestein */
+/* vol module stolen from github.com/brookiestein */
 static const char vol[] =
     "muted=`wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3;}'`; \
                             volume=`wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2;}'`; \
-                            if [ -z ${muted} ]; then \
-                                printf \"${volume}\"; \
-                            else printf \"离开\"; \
-                            fi";
-
-static const char mic[] =
-    "muted=`wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | awk '{print $3;}'`; \
-                            volume=`wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | awk '{print $2;}'`; \
                             if [ -z ${muted} ]; then \
                                 printf \"${volume}\"; \
                             else printf \"离开\"; \
@@ -65,8 +57,6 @@ static const struct arg args[] = {
     {battery_perc, "^fg(689d6a) %s%% ^fg()", "BAT0"},
 
     {run_command, "^fg(458588)  %s ^fg()", vol},
-    {run_command, "^fg(458588) %s ^fg()", mic},
-
     {datetime, "^fg(b16286)%s^fg()", "%Y年%m月%d日"},
     {kanji, "^fg(b16286) %s ^fg()", NULL},
     {datetime, "^fg(b16286)%s ^fg()", "%H:%M:%S"},
