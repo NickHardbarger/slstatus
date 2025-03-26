@@ -12,15 +12,15 @@ static const char unknown_str[] = "零";
 /*
  * function            description                     argument (example)
  *
- *y battery_perc        battery percentage              battery name (BAT0)
- *y cpu_perc            cpu usage in percent            NULL
- *y datetime            date and time                   format string (%F %T)
- *y kanji               current day of week kanji       NULL
- *y ram_perc            memory usage in percent         NULL
- *y run_command         custom shell command            command (echo foo)
- *y temp                temperature in degree celsius   sensor file
+ * battery_perc        battery percentage              battery name (BAT0)
+ * cpu_perc            cpu usage in percent            NULL
+ * datetime            date and time                   format string (%F %T)
+ * kanji               current day of week kanji       NULL
+ * ram_perc            memory usage in percent         NULL
+ * run_command         custom shell command            command (echo foo)
+ * temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
- *y wifi_perc           WiFi signal in percent          interface name (wlan0)
+ * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
 /* vol module stolen from github.com/brookiestein */
@@ -40,7 +40,6 @@ static const struct arg args[] = {
     {ram_perc, "^fg(d79921) %s%% ^fg()", NULL},
     {wifi_perc, "^fg(98971a) %s%% ^fg()", "wlp3s0"},
     {battery_perc, "^fg(689d6a) %s%% ^fg()", "BAT0"},
-
     {run_command, "^fg(458588)  %s ^fg()", vol},
     {datetime, "^fg(b16286)%s^fg()", "%Y年%m月%d日"},
     {kanji, "^fg(b16286) %s ^fg()", NULL},
