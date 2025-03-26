@@ -22,7 +22,6 @@ COM =\
 	components/run_command\
 	components/swap\
 	components/temperature\
-	components/uptime\
 	components/volume\
 	components/wifi
 
