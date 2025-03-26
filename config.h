@@ -30,8 +30,6 @@ static const char unknown_str[] = "零";
  *n load_avg            load average                    NULL
  *n netspeed_rx         receive network speed           interface name (wlan0)
  *n netspeed_tx         transfer network speed          interface name (wlan0)
- *n num_files           number of files in a directory  path
- *                                                     (/home/foo/Inbox/cur)
  *n ram_free            free memory in GB               NULL
  *y ram_perc            memory usage in percent         NULL
  *n ram_total           total memory size in GB         NULL
