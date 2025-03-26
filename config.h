@@ -22,10 +22,7 @@ static const char unknown_str[] = "零";
  *y cpu_perc            cpu usage in percent            NULL
  *y datetime            date and time                   format string (%F %T)
  *y kanji               current day of week kanji       NULL
- *n ram_free            free memory in GB               NULL
  *y ram_perc            memory usage in percent         NULL
- *n ram_total           total memory size in GB         NULL
- *n ram_used            used memory in GB               NULL
  *y run_command         custom shell command            command (echo foo)
  *y temp                temperature in degree celsius   sensor file
  *                                                     (/sys/class/thermal/...)
